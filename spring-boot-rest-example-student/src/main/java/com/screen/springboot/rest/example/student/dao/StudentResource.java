@@ -1,5 +1,6 @@
-package com.screen.springboot.rest.example.student;
+package com.screen.springboot.rest.example.student.dao;
 
+import com.screen.springboot.rest.example.student.exception.StudentNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

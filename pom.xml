@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springboot.rest.example</groupId>
-	<artifactId>spring-boot-2-rest-service-content-negotiation</artifactId>
+	<artifactId>spring-boot-rest-example-student</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-2-rest-service</name>
+	<name>${artifactId}</name>
 	<description>Spring Boot 2 and REST - Example Project</description>
 
 	<parent>
@@ -68,12 +68,18 @@
 	</dependencies>
 
 	<build>
+
+		<finalName>${artifactId}</finalName>
+
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
+
 	</build>
 
 	<repositories>

@@ -1,6 +1,6 @@
 package com.screen.springboot.rest.example;
 
-import com.screen.springboot.rest.example.student.StudentResource;
+import com.screen.springboot.rest.example.student.dao.StudentResource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = StudentResource.class)
 @ContextConfiguration
-public class SpringBoot2RestServiceApplicationTests {
+public class SpringBootRestExampleStudentTests {
 
 	@Autowired
 	StudentResource studentResource;

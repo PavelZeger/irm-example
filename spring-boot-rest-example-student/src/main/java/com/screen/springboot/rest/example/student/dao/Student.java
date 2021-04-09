@@ -1,4 +1,4 @@
-package com.screen.springboot.rest.example.student;
+package com.screen.springboot.rest.example.student.dao;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
