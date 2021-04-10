@@ -1,4 +1,4 @@
-package primenumbers;
+package prime_numbers;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

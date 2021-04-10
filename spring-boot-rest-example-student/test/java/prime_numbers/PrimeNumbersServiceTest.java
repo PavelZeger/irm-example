@@ -1,4 +1,4 @@
-package primenumbers;
+package prime_numbers;
 
 import org.junit.jupiter.api.Test;
 
