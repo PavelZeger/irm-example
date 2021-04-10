@@ -10,10 +10,10 @@ import static binary_search.BinarySearchService.*;
  * @implNote irm-example
  * @since 10/04/2021
  */
-public class BinarySearchServiceTest {
+class BinarySearchServiceTest {
 
     @Test
-    public void testBinarySearch() {
+    void testBinarySearch() {
         int[] actualArray = {1, 109, 235, 325, 487, 526, 918};
         int actualKey = 325;
         int expectedResult = 3;
