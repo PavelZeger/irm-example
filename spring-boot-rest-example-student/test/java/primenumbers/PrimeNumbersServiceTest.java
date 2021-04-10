@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * @author Pavel Zeger
@@ -20,4 +20,5 @@ class PrimeNumbersServiceTest {
         int[] actualNumbers = PrimeNumbersService.getPrimeNumbers(testNumbers);
         assertArrayEquals(expectedNumbers, actualNumbers);
     }
+
 }

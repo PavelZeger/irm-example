@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class PrimeNumbersService {
 
-    private PrimeNumbersService() {
+    PrimeNumbersService() {
 
     }
 
@@ -21,9 +21,6 @@ public class PrimeNumbersService {
                 primeNumbers.add(number);
             }
         }
-        //int[] finalPrimeNumbers = new int[primeNumbers.size()];
-        //Arrays.setAll(finalPrimeNumbers, i -> finalPrimeNumbers[i])
-        //return finalPrimeNumbers;
         return primeNumbers.stream().mapToInt(i -> i).toArray();
     }
 

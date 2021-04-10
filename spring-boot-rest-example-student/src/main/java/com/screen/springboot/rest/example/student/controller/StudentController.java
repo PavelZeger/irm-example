@@ -1,5 +1,7 @@
-package com.screen.springboot.rest.example.student.dao;
+package com.screen.springboot.rest.example.student.controller;
 
+import com.screen.springboot.rest.example.student.dao.Student;
+import com.screen.springboot.rest.example.student.dao.StudentRepository;
 import com.screen.springboot.rest.example.student.exception.StudentNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,12 +13,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-public class StudentResource {
+public class StudentController {
 
 	@Autowired
 	private final StudentRepository studentRepository;
 
-	public StudentResource(StudentRepository studentRepository) {
+	public StudentController(StudentRepository studentRepository) {
 		this.studentRepository = studentRepository;
 	}
 
@@ -50,7 +52,7 @@ public class StudentResource {
 		URI location = getLocation(savedStudent, "/{id}");
 		return ResponseEntity.created(location).build();
 	}
-	
+
 	@PatchMapping("/{id}")
 	public ResponseEntity<Object> updateStudent(@RequestBody Student student, @PathVariable long id) {
 		Student updatedStudent = studentRepository.save(student);
