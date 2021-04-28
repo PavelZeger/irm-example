@@ -1,6 +1,5 @@
 package com.screen.springboot.rest.example.student.dao;
 
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Builder;
 
 import javax.persistence.Entity;

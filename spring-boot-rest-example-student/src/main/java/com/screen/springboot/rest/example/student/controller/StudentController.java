@@ -1,5 +1,6 @@
 package com.screen.springboot.rest.example.student.controller;
 
+import com.screen.springboot.rest.example.student.annotation.CustomExceptionHandler;
 import com.screen.springboot.rest.example.student.dao.Student;
 import com.screen.springboot.rest.example.student.dao.StudentRepository;
 import com.screen.springboot.rest.example.student.exception.StudentNotFoundException;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
+@CustomExceptionHandler
 public class StudentController {
 
 	@Autowired
@@ -26,7 +28,7 @@ public class StudentController {
 		return studentRepository;
 	}
 
-	@GetMapping
+	@GetMapping("")
 	public List<Student> retrieveAllStudents() {
 		List<Student> students = studentRepository.findAll();
 		if (students.isEmpty()) {

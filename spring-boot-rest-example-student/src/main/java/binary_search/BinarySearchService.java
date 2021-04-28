@@ -42,7 +42,7 @@ public final class BinarySearchService {
             return -1;
         }
         if (key == array[median]) {
-            return median;
+            return median; 
         } else if (key < array[median]) {
             return recursiveBinarySearch(array, key, low, median - 1);
         } else {
